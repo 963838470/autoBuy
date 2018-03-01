@@ -115,7 +115,6 @@ def goToBuy(driver, user):
 def loginMall(user, pwd):
     driver = webdriver.Chrome()
     driver.get(LOGIN_URL)
-    hasLogin = False
     try:
         account = driver.find_element_by_xpath('//*[@id="login_userName"]')
         account.click()
@@ -130,7 +129,7 @@ def loginMall(user, pwd):
 
     while True:
         time.sleep(3)
-        if LOGIN_SUCCESS_CONFIRM == driver.current_url:
+        if LOGIN_SUCCESS_CONFIRM == driver.current_url:  # 手动登陆后跳转网页网址正确，退出死循环
             print(user + '登录成功！')
             break
     goToBuy(driver, user)
