@@ -62,7 +62,7 @@ if __name__ == "__main__":
                     elif rare.text == "卓越":
                         price = 1800
                     elif rare.text == "史诗":
-                        price = 5000
+                        price = 7000
                     elif rare.text == "神话":
                         price = 50000
                     else:
