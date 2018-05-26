@@ -5,7 +5,7 @@ import time
 from threading import Thread
 
 
-ACCOUNTS = {"18855951969": "cB123456"}
+ACCOUNTS = {}
 
 # MATE10 抢购地址
 #BUY_URL = 'https://www.vmall.com/product/396602535.html'
